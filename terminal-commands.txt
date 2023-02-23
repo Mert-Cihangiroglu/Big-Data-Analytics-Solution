@@ -9,3 +9,10 @@
 # Show the content of the file 
  - hadoop fs -cat hdfs://localhost:54310/data/
 ------------------------------------------------------------------------------------------------------------------------------------
+# Mongo-Spark-Connector 
+ - cd /usr/local/spark/jars
+ - wget https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.11/2.3.5/mongo-spark-connector_2.11-2.3.5.jar
+
+ # Mongo Java Driver
+ - cd /usr/local/spark/jars
+ - wget https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/3.12.11/mongo-java-driver-3.12.11.jar
