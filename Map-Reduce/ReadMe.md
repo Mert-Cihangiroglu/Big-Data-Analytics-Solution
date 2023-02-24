@@ -15,3 +15,7 @@ Mapper:
 Reducer:
 
 - This function is  used for processing tasks such as calculating the total count for each key or performing other types of analysis. It typically produces a single result or set of results based on the input data.
+
+scp  reducer.py mert@34.125.203.34:~/project-folder/
+
+hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.10.0.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input data/data.csv -output output

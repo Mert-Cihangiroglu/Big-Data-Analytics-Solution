@@ -13,8 +13,13 @@ for line in sys.stdin:
 
     this_key, this_data = data
 
-    if this_data[1] > 0.90:
-        if this_key == 1:
-            total_bankrupt += 1
-        else:
-            total_non_bankrupt += 1
+
+    if this_key != 'Bankrupt?':
+        if float(this_data) > 0.5:
+            if this_key == 1:
+                total_bankrupt += 1
+            else:
+                total_non_bankrupt += 1
+
+print("total_bankrupt","total_non_bankrupt")
+print(total_bankrupt,total_non_bankrupt)
