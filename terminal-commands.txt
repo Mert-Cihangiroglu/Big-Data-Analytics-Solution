@@ -16,3 +16,7 @@
  # Mongo Java Driver
  - cd /usr/local/spark/jars
  - wget https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/3.12.11/mongo-java-driver-3.12.11.jar
+
+ # Map-Reduce Job
+ - hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.10.0.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input hdfs://localhost:54310/data -output output12/
+ 
