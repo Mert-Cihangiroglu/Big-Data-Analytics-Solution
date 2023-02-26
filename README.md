@@ -8,16 +8,16 @@
 <p>The project starts with a large data source, which could be a CSV file or any other file format. The data is loaded onto the Hadoop Distributed File System (HDFS) to ensure storage scalability.</p>
 
 <h2>Sandbox</h2>
-<p>The next step involves creating a sandboxed environment using Hadoop and Spark. The data is loaded into MongoDB to ensure scalability through a Big Data architecture. The boundaries are controlled using meaningful filtering or sampling strategies, including stratification if needed.</p>
+<p>The next step involves creating a sandboxed environment using Hadoop and Spark. The data is loaded into MongoDB to ensure scalability through a Big Data architecture.</p>
 
 <h2>Exploratory Data Analysis</h2>
-<p>The sandboxed environment is then used for exploratory analyses with standard libraries to decide which model to build. The analysis includes evaluation and interpretation of results to identify promising models.</p>
+<p>The sandboxed environment is then used for exploratory analyses with standard libraries to analyze the dataset, and perform feature selection. </p>
 
 <h2>Model Building</h2>
-<p>Spark is used to apply the promising analyses or train/apply models to the entire dataset. The model is built using the results obtained from the exploratory data analysis.</p>
+<p>Spark is used to apply the analyses or train/apply models to the altered (I applied undersampling to entire dataset) dataset. The model is built using the results obtained from the exploratory data analysis.</p>
 
 <h2>MapReduce Jobs</h2>
-<p>Additional MapReduce jobs can be added to the project if needed. These jobs can be used for tasks such as counting the number of companies in the dataset.</p>
+<p>Additional MapReduce job was added to demonstrate the skills.</p>
 
 </body>
 </html>
