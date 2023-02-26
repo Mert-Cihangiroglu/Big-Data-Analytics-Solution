@@ -1,7 +1,6 @@
 # BDSA_Project
 
 <body>
-<h1>Project Name</h1>
 <h2>Overview</h2>
 <p>This project involves the use of Big Data technologies to analyze and build a classification model using a large dataset(Assuming that the dataset is large). The project uses Hadoop and Spark to load and process data, MongoDB for data warehouse, HDFS for datalake.</p>
 
