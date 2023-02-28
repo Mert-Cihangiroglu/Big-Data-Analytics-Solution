@@ -1,12 +1,6 @@
 
 
-- Goal:ttempt to identify the default number of companies from the CSV file.
-
-- Use the core concepts, HDFS and MapReduce of Big Data Hadoop Platform to solve the problem.
-
-- Processing large volumes of data in parallel by dividing the work into a set of independent tasks.(Assuming our csv is big data)
-
-- Use MapReduce process file to break it into chunks and process it in parallel.(how the code works underhood to achive scalability)
+- Goal: Attempt to identify the default and non default number of companies where Operating Rate Profit is greater than 0.5 in the CSV file.
 
 Mapper:
 
@@ -16,6 +10,4 @@ Reducer:
 
 - This function is  used for processing tasks such as calculating the total count for each key or performing other types of analysis. It typically produces a single result or set of results based on the input data.
 
-scp  reducer.py mert@34.125.203.34:~/project-folder/
-
-hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.10.0.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input data/data.csv -output output
+- Comment to start the job: hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.10.0.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input data/data.csv -output output
