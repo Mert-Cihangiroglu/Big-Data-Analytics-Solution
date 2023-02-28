@@ -1,6 +1,6 @@
 
 
-- Goal: Attempt to identify the default and non default number of companies where Operating Rate Profit is greater than 0.5 in the CSV file.
+Goal: Attempt to identify the default and non default number of companies where Operating Rate Profit is greater than 0.5 in the CSV file.
 
 Mapper:
 
